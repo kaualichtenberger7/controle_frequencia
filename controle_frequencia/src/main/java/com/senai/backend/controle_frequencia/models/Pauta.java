@@ -1,5 +1,6 @@
 package com.senai.backend.controle_frequencia.models;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -64,6 +65,16 @@ que referencia a pauta à qual ele está associado. A lista de usuários é repr
 
     public void setUsuario(List<Usuario> usuario) {
         this.usuario = usuario;
+    }
+
+    public void setNome(String nome) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setNome'");
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDataNascimento'");
     }
 
     
