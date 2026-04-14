@@ -10,11 +10,17 @@ import com.senai.backend.controle_frequencia.models.Usuario;
 import com.senai.backend.controle_frequencia.repositories.UsuarioRepository;
 
 @Service
-public class usuarioservice{
+public class usuarioservice {
+
+
+
 
     
     @Autowired    
     private UsuarioRepository usuarioRepository;
+    public usuarioservice() {
+    }
+
     public Long contarUsuario(){
         return usuarioRepository.count();
     
@@ -58,4 +64,17 @@ public class usuarioservice{
         return usuarioRepository.save(usuarioRecuperado);
    }
    return null;
-} 
+
+   }
+
+   public UsuarioRepository getUsuarioRepository() {
+    return usuarioRepository;
+   }
+
+   public void setUsuarioRepository(UsuarioRepository usuarioRepository) {
+    this.usuarioRepository = usuarioRepository;
+   }
+
+
+
+
