@@ -75,6 +75,31 @@ public class usuarioservice {
     this.usuarioRepository = usuarioRepository;
    }
 
+   @Override
+   public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + ((usuarioRepository == null) ? 0 : usuarioRepository.hashCode());
+    return result;
+   }
+
+   @Override
+   public boolean equals(Object obj) {
+    if (this == obj)
+        return true;
+    if (obj == null)
+        return false;
+    if (getClass() != obj.getClass())
+        return false;
+    usuarioservice other = (usuarioservice) obj;
+    if (usuarioRepository == null) {
+        if (other.usuarioRepository != null)
+            return false;
+    } else if (!usuarioRepository.equals(other.usuarioRepository))
+        return false;
+    return true;
+   }
+
 
 
 

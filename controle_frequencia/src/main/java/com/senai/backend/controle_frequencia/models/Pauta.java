@@ -67,7 +67,7 @@ que referencia a pauta à qual ele está associado. A lista de usuários é repr
         this.usuario = usuario;
     }
 
-    public void setNome(String nome) {
+    public void setNome(Object nome) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setNome'");
     }
@@ -75,6 +75,26 @@ que referencia a pauta à qual ele está associado. A lista de usuários é repr
     public void setDataNascimento(LocalDate dataNascimento) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setDataNascimento'");
+    }
+
+    public Object getNome() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNome'");
+    }
+
+    public void setNome(Object nome) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setNome'");
+    }
+
+    public Object getDescricao() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getDescricao'");
+    }
+
+    public void setDescricao(Object descricao) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDescricao'");
     }
 
     
