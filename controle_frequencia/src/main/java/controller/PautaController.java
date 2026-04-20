@@ -23,6 +23,7 @@ public class PautaController {
     }
 
     public Pauta criarPauta(Pauta pauta) {
+        Interger id = null;
         return pautaService.buscarPauta(id);
     }
 

@@ -1,6 +1,9 @@
 package controller;
 
+import java.util.List;
+
 import com.senai.backend.controle_frequencia.models.Pauta;
+import com.senai.services.Interger;
 
 public class PautaService {
 
@@ -9,7 +12,7 @@ public class PautaService {
         throw new UnsupportedOperationException("Unimplemented method 'contarPautas'");
     }
 
-    public Pauta buscarPauta(Object id) {
+    public Pauta buscarPauta(Interger id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'buscarPauta'");
     }

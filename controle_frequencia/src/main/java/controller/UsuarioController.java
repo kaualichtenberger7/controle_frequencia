@@ -44,12 +44,12 @@ public class UsuarioController {
     }     
 
     public Usuario cadastrarUsuario(Usuario usuario) {
-        return usuarioService.cadastrarUsuario(usuario);
+        return usuarioService.deletarUsuario(usuario);
     }
 
     @PostMapping("/salvar-usuario")
     public Usuario cadastrarUsuario1(@RequestBody Usuario usuario) {
-        return usuarioService.cadastrarUsuario(usuario);
+        return usuarioService.deletarUsuario(usuario);
     }
 
     public String atualizarUsuario(@PathVariable Long id, @RequestBody Usuario usuario){
